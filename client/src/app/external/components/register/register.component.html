@@ -1,0 +1,65 @@
+<div class="register">
+  <div class="title">Nuevo Usuario</div>
+  <div class="form">
+  <form [formGroup]="registerForm">
+    <div class="input-group">
+      <div class="input"
+      >
+        <label
+          for="username"
+          class="new-design"
+        >
+          Username</label>
+        <input
+          placeholder="Username"
+          type="email"
+          label="Username"
+          id="username"
+          formControlName="username"/>
+
+        <label
+          for="password"
+          class="new-design"
+        >
+          Password</label>
+        <input
+          placeholder="************"
+          type="password"
+          label="Contraseña"
+          id="password"
+          formControlName="password"/>
+
+        <label
+          for="email"
+          class="new-design"
+        >
+          Email</label>
+        <input
+          placeholder="Email"
+          type="email"
+          label="Email"
+          id="email"
+          formControlName="email"/>
+
+        <label
+          for="displayName"
+          class="new-design"
+        >
+          Display Name</label>
+        <input
+          placeholder="Display name"
+          type="text"
+          label="Display name"
+          id="displayName"
+          formControlName="displayName"/>
+      </div>
+    </div>
+    <button class="btn btn-block btn-success" (click)='register()'>
+      Register
+    </button>
+    <button class="btn btn-block btn-dark" (click)='cancel()'>
+      Cancel
+    </button>
+  </form>
+  </div>
+</div>

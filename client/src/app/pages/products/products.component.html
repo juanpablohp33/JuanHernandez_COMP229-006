@@ -1,0 +1,32 @@
+<div class="register">
+    <div class="title">Add Products</div>
+    <div class="form">
+        <form [formGroup]="foodForm">
+            <div class="input-group">
+                <div class="input">
+                    <label for="name" class="new-design">
+            Product Name</label>
+                    <input placeholder="Name" type="text" label="Name" id="name" formControlName="name" />
+
+                    <label for="author" class="new-design">
+            Micro Businessman</label>
+                    <input placeholder="Businessman" type="text" label="Businessman" id="author" formControlName="author" />
+
+                    <label for="published" class="new-design">
+            Product picture link</label>
+                    <input placeholder="Link" type="text" label="link" id="published" formControlName="published" />
+
+                    <label for="description" class="new-design">
+            Description</label>
+                    <input placeholder="Description" type="text" label="Description" id="description" formControlName="description" />
+                    <label for="price" class="new-design">
+            Price</label>
+                    <input placeholder="Price" type="number" label="Price" id="price" formControlName="price" />
+                </div>
+            </div>
+            <button class="btn btn-block btn-success" (click)='addFood()'>
+        Add Product
+      </button>
+        </form>
+    </div>
+</div>

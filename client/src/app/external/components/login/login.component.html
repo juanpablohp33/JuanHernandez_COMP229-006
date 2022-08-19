@@ -1,0 +1,44 @@
+<div class="login">
+  <div class="form">
+    <div class="title">Welcome!</div>
+    <form [formGroup]="loginForm">
+      <div class="input-group">
+        <div class="input"
+        >
+          <label
+            for="username"
+            class="new-design"
+          >
+            Username</label>
+      <input
+        placeholder="Username"
+        type="email"
+        label="Username"
+        id="username"
+        formControlName="username"/>
+
+          <label
+            for="password"
+            class="new-design"
+          >
+            Password</label>
+      <input
+        placeholder="************"
+        type="password"
+        label="Contraseña"
+        id="password"
+        formControlName="password"/>
+
+</div>
+      </div>
+      <button class="btn btn-block btn-primary" [disabled]="loginForm.invalid" (click)='login()'>
+        Login
+      </button>
+      <button class="btn btn-block btn-success" (click)='goToRegister()'>
+        Register
+      </button>
+    </form>
+  </div>
+  <div class="bottom">
+  </div>
+</div>

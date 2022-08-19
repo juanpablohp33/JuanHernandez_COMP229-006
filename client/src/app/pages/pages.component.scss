@@ -1,0 +1,27 @@
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 63px);
+    .content {
+      background: #FAFAFA;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      &.has-background {
+        background: #FAFAFA;
+        background-size: cover;
+      }
+      & > .container {
+        /*max-width: 840px;*/
+        margin: 0 auto;
+        width: 100%;
+        /*display: flex;*/
+        /*padding: 24px 0px;*/
+      }
+    }
+  }
+}

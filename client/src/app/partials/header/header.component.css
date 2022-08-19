@@ -1,0 +1,13 @@
+button {
+  margin-left: 10px;
+}
+.navbar-brand img{
+    max-height: 45px;
+}
+
+.navbar {
+  background-color: #d9211b;
+}
+a {
+  color: white;
+}
